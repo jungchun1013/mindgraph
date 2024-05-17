@@ -1,0 +1,28 @@
+{
+  "name": "@mindgraph/read",
+  "version": "0.3.0",
+  "description": "data loaders for @mindgraph/draw",
+  "scripts": {
+    "build": "rollup -c",
+    "lint": "eslint src/**",
+    "typecheck": "tsc -noEmit"
+  },
+  "type": "module",
+  "author": "jollyjerr <jollyjerr@gmail.com>",
+  "license": "MIT",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": "./dist/index.js",
+  "devDependencies": {
+    "@rollup/plugin-typescript": "^11.1.1",
+    "@types/node": "^20.2.5",
+    "rollup": "^3.23.0"
+  },
+  "dependencies": {
+    "@mindgraph/types": "workspace:*"
+  }
+}
